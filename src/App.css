@@ -1,0 +1,101 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Sidebar section css starts */
+
+
+
+/* Sidebar section css ends */
+
+/* -------------------------------------------------------------------- */
+
+/* Mainsectioncss starts here */
+.sectionOneMain{
+    position: relative;
+}
+
+.navbarMainSection{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Mainsectioncss ends here */
+
+/* ----------------------------------------------------------------------- */
+
+
+/* Home css ends here */
+
+
+
+.mainsection{
+    /* height: fit-content; */
+    background-color: #1E1E1F;
+    height: fit-content;
+    border: 1px solid rgb(89, 88, 88);
+    border-radius: 15px;
+}
+
+.sidebar{
+    background-color: #1E1E1F;
+    height: fit-content;
+    border: 1px solid rgb(89, 88, 88);
+    border-radius: 15px;
+}
+
+.sectionone{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #121212;
+    color: #fff;
+}
+
+.mainsectionone{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+.has-scrollbar::-webkit-scrollbar {
+    width: 10px; 
+
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px;
+
+  }
+
+
+  .has-scrollbar::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+  }
+  
+ 
+  .has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #1E1E1F;
+    height: fit-content;
+    border: 1px solid rgb(89, 88, 88);
+    border-radius: 5px;
+    width: 10px;
+  }
+  
+
+
+
+
+/* Home css ends here */
+
+
+
+/* ----------------------------------------------------------------------- */
+
