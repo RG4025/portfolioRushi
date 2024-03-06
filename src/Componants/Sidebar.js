@@ -8,7 +8,7 @@ function Sidebar() {
        
         <section className="sidebarMain">
             <div className="container">
-
+              
             </div>
         </section>
 

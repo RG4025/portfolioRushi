@@ -5,7 +5,7 @@ import "../App.css";
 
 function Home() {
   return (
-    <div className="sectionone has-scrollbar">
+    <div className="sectionone ">
       <div className="row">
         <div className="col-12 col-xl-3">
           <div className="container">
@@ -16,9 +16,15 @@ function Home() {
         </div>
         <div className="col-12 col-xl-9">
           <div className="container">
-            <div className=" mainsection my-3 my-xl-5">
+
+          <div className=" secOneChildOne my-3 my-xl-5">
+            <div className=" mainsection has-scrollbar ">
+
+              <div className="">
               <MainSection />
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
