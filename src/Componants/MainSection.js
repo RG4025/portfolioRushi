@@ -11,31 +11,36 @@ function MainSection() {
     <>
       <section className="sectionOneMain">  
         <div className=" ">
-          <div className="navbarMainSection py-3 ">
-            <ul className="nav px-2 gap-1 gap-sm-3 d-flex justify-content-around align-items-center">
-              <li className="navLink px-2">
+          <div className="navbarMainSection py-1 py-md-2 ">
+            <ul className="navbarScroll navScrollbar">
+              <li className="navLink px-0 py-0 py-sm-0">
                 <NavLink className="navItem" to="/">
                   About
                 </NavLink>
               </li>
-              <li className="navLink px-2">
+              <li className="navLink px-0 py-0 py-sm-0">
                 <NavLink className="navItem" to="/Blogs">
                   Blogs
                 </NavLink>
               </li>
-              <li className="navLink px-2">
+              <li className="navLink px-0 py-0 py-sm-0">
+                <NavLink className="navItem" to="/Blogs">
+                  Education
+                </NavLink>
+              </li>
+              <li className="navLink px-0 py-0 py-sm-0">
                 <NavLink className="navItem" to="/Projects">
                   Projects
                 </NavLink>
               </li>
-              <li className="navLink px-2">
+              <li className="navLink px-0 py-0 py-sm-0">
                 <NavLink className="navItem" to="/Contact">
                   Contact
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className="container pt-5">
+          <div className="container pt-3">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/Blogs" element={<Blogs />} />
