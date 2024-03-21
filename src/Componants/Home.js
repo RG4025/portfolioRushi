@@ -9,7 +9,7 @@ function Home() {
       <div className="row">
         <div className="col-12 col-xl-3">
           <div className="container">
-            <div className=" sidebar my-3 my-xl-5">
+            <div className=" sidebar my-3 my-xl-4">
               <Sidebar />
             </div>
           </div>
@@ -17,7 +17,7 @@ function Home() {
         <div className="col-12 col-xl-9">
           <div className="container">
 
-          <div className=" secOneChildOne my-3 my-xl-5">
+          <div className=" secOneChildOne my-3 my-xl-4">
             <div className=" mainsection has-scrollbar ">
 
               <div className="">

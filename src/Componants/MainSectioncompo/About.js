@@ -13,21 +13,7 @@ function About() {
               officiis? Ut voluptas in corporis  eius magni
               doloribus commodi saepe impedit, omnis peruod error nostrum
               maxime, alias totam iure tempora tempore vitae iusto reprehenderit
-              corrupti dolores esse at! Veniam qui illum dolores rem! Alias,
-              provident excepturi! Atque consequatur non dignissimos ullam alias
-              accusantium? Exercitationem similique inventore laudantium iure
-              in, modi tempore, impedit alias ex nulla nihil quisquam ipsum eos
-              officiis? Ut voluptas in corporis magnam earum? Quidem optio odio
-              eveniet dolorem vel ipsum voluptates doloribus sapiente, magni,
-              accusamus nihil, asperiores officiis ducimus eius cupiditate
-              dolorum tempora nisi quia ipsam earum perferendis? Corrupti
-              nostrum voluptatum eligendi ratione? Tenetur, quis, sapiente
-              in, modi tempore, impedit alias ex nulla nihil quisquam ipsum eos
-              officiis? Ut voluptas in corporis  eius magni
-              doloribus commodi saepe impedit, omnis peruod error nostrum
-              maxime, alias totam iure tempora tempore vitae iusto reprehenderit
-              corrupti dolores esse at! Veniam qui illum dolores rem! Alias,
-              provident excepturi! Atque consequatur non dignissimos ullam alias
+              corquatur non dignissimos ullam alias
               accusantium? Exercitationem similique inventore laudantium iure
               in, modi tempore, impedit alias ex nulla nihil quisquam ipsum eos
               officiis? Ut voluptas in corporis magnam earum? Quidem optio odio
