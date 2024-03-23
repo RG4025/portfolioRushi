@@ -16,7 +16,12 @@ ul {
 
 /* Sidebar section css starts */
 
+
+.sidebar{
+}
+
 .sidebarMain{
+  /* border-right: 2px dotted #F9D66E; */
   width: 100%;
 }
 

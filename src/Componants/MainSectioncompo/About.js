@@ -32,6 +32,10 @@ function About() {
           <div className="d-flex justify-content-end align-items-center pb-2">
             <h5 className="aboutTitle">I Work On</h5>
           </div>
+
+          <div>
+              
+          </div>
         </div>
       </section>
     </>
