@@ -27,10 +27,14 @@ img {}
   border: 1px solid gray;
   background-color: #343436;
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .myImage img{
-  width: 100px;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .sidebarChildOne{
@@ -57,6 +61,10 @@ img {}
   border: 1px solid gray;
   color: #F9D66E;
   font-size: 25px;
+}
+
+.socialTwo strong{
+  color: #D6D6D6;
 }
 
 
@@ -93,7 +101,8 @@ img {}
 
 .navItem {
   text-decoration: none;
-  color: #D6D6D6;
+  color: #fff;
+  font-weight: 600;
   padding: 1px 0px;
 }
 
@@ -146,6 +155,32 @@ img {}
   border-radius: 5px;
   width: 10px;
 }
+
+/* About section css starts here */
+
+  .aboutTitle{
+    color: #F9D66E;
+    /* border-bottom: 2px solid #F9D66E; */
+    position: relative;
+  }
+
+  .aboutTitle::after{
+    position: absolute;
+    inset: 100% 0 0 0;
+    content: " ";
+    background-color: #F9D66E;
+    width: 30%;
+    height: 3px;
+  }
+
+  .aboutSectionParent p{
+  color: #D6D6D6;
+  word-spacing: 2px;
+  /* line-height: 4vh; */
+  }
+
+/* About section css ends here */
+
 
     
 /* Mainsectioncss ends here */
@@ -263,6 +298,10 @@ img {}
   .myImage{
     width: 50%;
     margin: 0 auto;
+  }
+
+  .myImage img{
+    height: 140px;
   }
 
   .socialOne{

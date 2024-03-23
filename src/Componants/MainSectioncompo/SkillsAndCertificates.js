@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Blogs() {
+function SkillsAndCertificates() {
   return (
 
     <>
@@ -34,4 +34,4 @@ function Blogs() {
   )
 }
 
-export default Blogs
+export default SkillsAndCertificates;

@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import '../App.css';
 import * as icon from 'react-bootstrap-icons';
+import myImage from "../Images/myImage.jpg"
+
+
 function Sidebar() {
 
   
@@ -14,8 +17,8 @@ function Sidebar() {
                 <div className="sidebarChildOne py-2 mt-2 mt-xl-3 d-flex d-xl-block  justify-content-flex-start gap-2 gap-sm-2 gap-md-4 align-items-center ">
 
 
-                  <div className='myImage my-3 text-center'>
-                    <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/my-avatar.png" alt="Rushi" className=''/>
+                  <div className='myImage my-3'>
+                    <img src={myImage} alt="Rushi" className=''/>
                   </div>
 
                   <div className='d-flex flex-column gap-0 gap-xl-2 justify-content-center align-items-center text-center'>
@@ -31,7 +34,7 @@ function Sidebar() {
                                    <icon.Envelope/>
                                 </div>
                                 <div className='d-flex flex-column '>
-                                          <span className='text-uppercase '>Email</span>
+                                          <span className='text-uppercase text-light'>Email</span>
                                           <strong className=' fw-medium'>rushikeshgurav@gmail.com</strong>
                                 </div>
                               </div>
@@ -40,7 +43,7 @@ function Sidebar() {
                                 <icon.Telephone/>
                                 </div>
                                 <div className='d-flex flex-column '>
-                                          <span className='text-uppercase '>Contact</span>
+                                          <span className='text-uppercase text-light'>Contact</span>
                                           <strong className=' fw-medium'>9130817064</strong>
                                 </div>
                               </div>

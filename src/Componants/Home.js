@@ -14,19 +14,19 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-xl-9">
-          <div className="container">
+          <div className="col-12 col-xl-9">
+            <div className="container">
 
-          <div className=" secOneChildOne my-3 my-xl-4">
-            <div className=" mainsection has-scrollbar ">
+            <div className=" secOneChildOne my-3 my-xl-4">
+              <div className=" mainsection has-scrollbar ">
 
-              <div className="">
-              <MainSection />
+                <div className="">
+                <MainSection />
+                </div>
               </div>
             </div>
+            </div>
           </div>
-          </div>
-        </div>
       </div>
     </div>
   );
