@@ -51,7 +51,7 @@ function About() {
         </div>
 
         <div className="aboutSectionParentTwo">
-          <div className="d-flex justify-content-end align-items-center pb-2">
+          <div className="d-flex justify-content-start align-items-center pb-2">
             <h5 className="aboutTitle">I Work On</h5>
           </div>
 
@@ -61,7 +61,7 @@ function About() {
                 return (
                   <div className="col py-3 ">
                     <div className="container">
-                      <div className="p-3 aboutChildTwoParent text-center d-flex justify-content-evenly  align-items-center ">
+                      <div className="p-3 aboutChildTwoParent text-start d-flex justify-content-evenly  align-items-center ">
                         <div className="aboutChildTwo">{e.icons}</div>
                         <div>
                           <strong className="fs-6 text-light">

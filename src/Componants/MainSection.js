@@ -35,7 +35,7 @@ function MainSection() {
     <>
       <section className="sectionOneMain">
         <div className=" ">
-          <div className="navbarMainSection py-1 py-md-2 ">
+          <div className="navbarMainSection p-2 py-md-3 ">
             <ul className="navbarScroll navScrollbar">
               {navbarLinks.map((e,index) => {
                 return (

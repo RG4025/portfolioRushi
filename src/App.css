@@ -16,7 +16,7 @@ ul {
 
 
 i{
-  color: #F9D66E;
+  /* color: #F9D66E; */
 }
 
 
@@ -34,7 +34,7 @@ i{
 .myImage{
   /* width: 33%; */
   /* margin: 0 auto; */
-  border: 1px solid gray;
+  border: 1px solid #F9D66E;
   background-color: #343436;
   border-radius: 15px;
   overflow: hidden;
@@ -48,7 +48,7 @@ i{
 }
 
 .sidebarChildOne{
-  border-bottom: 1px solid gray;
+  border-bottom: 1px dotted #F9D66E ;
 }
 
 .sidebarChildOne small{
@@ -94,7 +94,7 @@ i{
   right: 1%;
   width: fit-content;
   background-color: #343436;
-  border-radius: 10px 0 10px 0;
+  border-radius: 15px 0 15px 0;
   border: 1px solid rgb(89, 88, 88);
   z-index: 9999;
 }
@@ -212,7 +212,105 @@ i{
 /* About section css ends here */
 
 
-    
+/* Skill section css Starts here */
+
+.skillChildOne{
+  background-color: #343436;
+  border-radius: 10px;
+  border: 1px solid gray;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+
+.skillImage{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.skillImage img{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  border: 2px solid #fff;
+  transition: all ease 0.5s;
+}
+
+.skillChildOne:hover .skillImage img{
+  border: 2px solid #F9D66E;
+  transform: scale(0.95);
+}
+.skillChildOne:hover {
+  border: 1px solid #F9D66E;
+  color: #F9D66E;
+}
+.skillChildOne:hover span{
+  color: #F9D66E;
+}
+
+.skillChildTwo{
+  background-color: #343436;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* Skill section css ends here */
+
+
+/* Contact Section starts here */
+
+.contactMain input, textarea{
+  background-color: #343436;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: all ease 0.5s;
+
+  outline: #F9D66E;
+}
+.contactMain input:focus, textarea:focus{
+  border: 1px solid #F9D66E;
+  color: #fff;
+  outline: #F9D66E;
+}
+
+/* .contactMain button{
+  border: 1px solid gray;
+  outline: none;
+  background-color: #F9D66E;
+  color: black;
+  border-radius: 10px;
+} */
+
+
+.contactIcon{
+  color: #fff;
+  transition: all ease 0.4s;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #343436;
+  padding: 10px;
+}
+
+.contactIcon:hover{
+  color: black;
+  transform: scale(1.09);
+  background-color: #353536 ;
+  border: 2px solid #F9D66E;
+ 
+}
+
+.contactMain input title{
+  background-color: #343436;
+  color: white;
+  border: 1px solid gray;
+}
+
+/* Contact Section ends here */
+
+
 /* Mainsectioncss ends here */
 
 /* ----------------------------------------------------------------------- */
@@ -335,7 +433,7 @@ i{
   }
 
   .socialOne{
-    border-bottom:  1px solid gray;
+    border-bottom:  1px dotted #F9D66E;
   }
   .sidebar{
     height: 90vh;

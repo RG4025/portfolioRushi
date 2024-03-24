@@ -1,37 +1,121 @@
-import React from 'react'
+import React from "react";
+import html_logo from "../../Images/html_logo.jpeg";
+import css_logo from "../../Images/css_logo.png";
+import js_logo from "../../Images/js_logo.png";
+import jquery_logo from "../../Images/jquery_logo.jpg";
+import react_logo from "../../Images/react_logo.png";
+import $ from "jquery";
+
 
 function SkillsAndCertificates() {
+
+  const skillFrontend = [
+    {
+      img: html_logo,
+      title: "HTML",
+    },
+    {
+      img: css_logo,
+      title: "CSS",
+    },
+    {
+      img: js_logo,
+      title: "Javascript",
+    },
+    {
+      img: jquery_logo,
+      title: "jQuery",
+    },
+    {
+      img: react_logo,
+      title: "React Js",
+    },
+  ];
+  const skillBackend = [
+    {
+      img: html_logo,
+      title: "Java",
+    },
+    {
+      img: css_logo,
+      title: "JDBC",
+    },
+    {
+      img: js_logo,
+      title: "Servlet",
+    },
+    {
+      img: jquery_logo,
+      title: "Springboot",
+    },
+    {
+      img: react_logo,
+      title: "MySQL",
+    },
+  ];
+
   return (
-
     <>
+      <section className="">
+        <div className="sectionSkillParent">
+          <div className="d-flex justify-content-end align-items-center pb-2">
+            <h4 className="aboutTitle">Frontend </h4>
+          </div>
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
+            {skillFrontend.map((e, index) => {
+              return (
+                <div className="col py-2 " key={index}>
+                  <div className="container skillChildOne p-3  d-flex flex-column justify-content-center align-items-center">
+                    <div className="skillImage d-flex justify-content-center align-items-center">
+                      <img src={e.img} alt="Language" className="img-fluid" />
+                    </div>
 
-        <strong>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate placeat tenetur, assumenda suscipit illum, veritatis quaerat saepe cumque sint provident vel sapiente recusandae quod architecto earum optio. Cum, quidem.
+                    <div className="py-2  fw-bold">
+                      <span>{e.title}</span>{" "}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="sectionSkillParent py-3">
+          <div className="d-flex justify-content-start align-items-center pb-2">
+            <h4 className="aboutTitle">Backend</h4>
+          </div>
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
+            {skillBackend.map((e, index) => {
+              return (
+                <div className="col py-2 " key={index}>
+                  <div className="container skillChildOne p-3  d-flex flex-column justify-content-center align-items-center">
+                    <div className="skillImage d-flex justify-content-center align-items-center">
+                      <img src={e.img} alt="Language" className="img-fluid" />
+                    </div>
 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis deserunt tenetur porro laudantium cum quas recusandae soluta a, animi alias cupiditate accusamus dolores quis vel nostrum modi dolorum nemo nisi.
-            Nam suscipit numquam sint eos, adipisci hic quaerat ut repellendus? Assumenda reprehenderit nostrum eum non, itaque consequuntur ipsa? Nihil quisquam obcaecati ipsum blanditiis tenetur animi. Architecto eligendi mollitia sint dolorem.
-            Deserunt neque consequatur veritatis accusamus laboriosam non voluptates tempora dicta quisquam vel aliquam fugiat aliquid expedita exercitationem optio sequi, incidunt nisi consectetur nihil alias molestias nulla unde. Maiores, nam officia.
-            Fuga veniam officiis corporis. Obcaecati voluptatum id, nostrum corrupti repellat eveniet, nam fuga libero ratione esse molestiae nemo doloremque, modi nisi ex placeat. Sint qui, ex provident animi nesciunt ipsam?
-            Minus dicta sapiente perferendis eveniet accusamus, tempora natus error est harum cupiditate nulla consectetur dolorum! Voluptate ea nesciunt natus quae maxime numquam enim dolores at similique tempore. Nam, repudiandae alias.
-            Optio dolores ipsum accusamus adipisci doloremque eligendi inventore consectetur minus! Esse atque dolor rem enim possimus corrupti amet voluptate. Est tenetur molestias nam ipsa vero porro atque ipsam distinctio nesciunt!
-            Repudiandae id deserunt nam quisquam, ipsam sint error sed ipsum ad tempora corrupti obcaecati odio quod laboriosam porro eos beatae veritatis voluptatem! Placeat animi vero, dignissimos quis blanditiis eum doloribus!
-            Laudantium mollitia a ad sint nostrum porro tenetur asperiores minima quod doloribus nesciunt unde voluptas officiis, fugiat rem cum odio blanditiis atque architecto et ex! Quos ipsa porro quas eum!
-            Accusantium non mollitia iure, ab ut modi reprehenderit vitae natus expedita aliquam ex sapiente animi voluptates cupiditate qui quis officia ea perferendis et adipisci quasi. Commodi optio quae id deserunt?
-            At fugiat odit nulla minus laborum provident quidem veritatis inventore repudiandae ad modi porro quo ipsum, sapiente similique. Animi consequuntur inventore officiis numquam vitae, adipisci error quo aut dicta nemo.
-            Ipsa amet itaque consequuntur cum, accusantium, provident distinctio veniam laudantium, laboriosam temporibus quaerat? Blanditiis ab, porro sint iure rerum obcaecati nostrum repellat enim ullam unde voluptates quidem molestiae et accusamus.
-            Sequi aliquid error architecto voluptatem modi suscipit reprehenderit libero dolorem? Sunt aspernatur deleniti eaque nihil officia suscipit. Dolore illum aliquam quos dignissimos officia quae sequi, vitae quibusdam, consequuntur facere laboriosam?
-            Doloremque, commodi possimus nam exercitationem alias, ipsa repudiandae rerum nihil nobis, cumque delectus necessitatibus. Ullam quo possimus amet quos necessitatibus iusto consectetur neque quas soluta! Magnam quod commodi omnis molestias.
-            Quidem laboriosam quasi dicta debitis earum qui voluptates. Deserunt deleniti non sed quia distinctio qui, inventore accusamus accusantium possimus eius. Officiis repellat cumque, incidunt nisi ducimus reprehenderit accusamus veniam tempore!
-            Aspernatur accusantium fugiat officia harum rem quod, a porro expedita quasi? In necessitatibus porro illum laudantium repellat saepe quis cupiditate aperiam, ab, nemo, eveniet corrupti! Facilis nesciunt corporis reprehenderit blanditiis?
-            Vel itaque autem similique corporis magni! Voluptas, minus debitis. Inventore a modi ducimus! Maxime, distinctio voluptatum nam assumenda aspernatur adipisci error tempore quod quas, nulla molestiae veritatis sequi. Illum, eos!
-            Tenetur cum doloremque dignissimos aliquam sequi at animi? Quaerat laudantium voluptates reiciendis soluta! Labore accusantium sed inventore? Tenetur optio magnam ab repudiandae numquam, dicta doloremque, corporis molestias, eligendi similique animi!
-            Quasi doloribus perspiciatis a at expedita ut, ipsa accusamus rem ratione tempore, repudiandae ullam error, placeat corrupti officiis eligendi tenetur. Impedit eaque officiis quam! Voluptas quam architecto quibusdam distinctio. Optio.
-            Repellat non debitis deserunt accusantium, obcaecati qui optio provident velit, sequi doloribus eaque culpa ipsam quae necessitatibus vitae harum blanditiis, dolor mollitia tenetur pariatur at ratione? Asperiores iure nihil commodi.
-            Hic deleniti dicta temporibus reprehenderit porro amet officia nesciunt sed veritatis libero! Hic beatae atque consequatur, eos nihil veritatis. Voluptate, voluptatum laboriosam aperiam provident illum ut magni nulla quasi voluptates?
-        </strong>
-    
+                    <div className="py-2  fw-bold">
+                      <span>{e.title}</span>{" "}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="sectionSkillParent py-3">
+          <div className="d-flex justify-content-start align-items-center pb-2">
+            <h4 className="aboutTitle">Certificates</h4>
+          </div>
+          <div className="skillChildTwo p-3">
+
+            here will be the UX design and javascript and react basics as well as the C++ udemy!!.
+
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
+
 
 export default SkillsAndCertificates;
