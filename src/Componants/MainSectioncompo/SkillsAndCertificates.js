@@ -10,10 +10,16 @@ import mysql_logo from "../../Images/mysql_logo.jpg";
 import servlet_logo2 from "../../Images/servlet_logo2.jpg";
 import springboot_logo from "../../Images/springboot_logo.png";
 import $ from "jquery";
-
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import udemyC from '../../CertificatesPDF/udemyC++.pdf';
+import reactCer from '../../CertificatesPDF/CourseraReactBasics.pdf';
+import mscit from '../../CertificatesPDF/MS-CIT_Rushi.pdf';
+import Javascript from '../../CertificatesPDF/javascript_Rushi.pdf';
+import uxDesign from '../../CertificatesPDF/CourseraRushikeshGurav.pdf';
 
 function SkillsAndCertificates() {
-
   const skillFrontend = [
     {
       img: html_logo,
@@ -59,6 +65,56 @@ function SkillsAndCertificates() {
     },
   ];
 
+  const owlResponsive = {
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 4,
+        nav: false,
+      },
+    },
+  };
+
+  const certificatesMain = [
+    {
+      cName: "Javascript",
+      cDate: "2023",
+      cBy: "Meta",
+      cLink: Javascript,
+    },
+    {
+      cName: "React Basics",
+      cDate: "2023",
+      cBy: "Meta",
+      cLink: reactCer,
+    },
+    {
+      cName: "C++",
+      cDate: "2023",
+      cBy: "Meta",
+      cLink: udemyC,
+    },
+    {
+      cName: "MS-CIT",
+      cDate: "2023",
+      cBy: "Meta",
+      cLink: mscit,
+    },
+    {
+      cName: "UX Design",
+      cDate: "2023",
+      cBy: "Meta",
+      cLink: uxDesign,
+    },
+  ];
+
   return (
     <>
       <section className="">
@@ -74,7 +130,6 @@ function SkillsAndCertificates() {
                     <div className="skillImage d-flex justify-content-center align-items-center">
                       <img src={e.img} alt="Language" className="img-fluid" />
                     </div>
-
                     <div className="py-2  fw-bold">
                       <span>{e.title}</span>{" "}
                     </div>
@@ -107,20 +162,47 @@ function SkillsAndCertificates() {
           </div>
         </div>
 
-        <div className="sectionSkillParent py-3">
-          <div className="d-flex justify-content-start align-items-center pb-2">
+        <div className="sectionSkillParent py-4">
+          <div className="d-flex justify-content-start align-items-center pb-3">
             <h4 className="aboutTitle">Certificates</h4>
           </div>
           <div className="skillChildTwo p-3">
+            <OwlCarousel
+              className=""
+              loop
+              margin={10}
+              dots={true}
+              autoplay={true}
+              autoplayTimeout={3000}
+              autoplayHoverPause={true}
+              items={5}
+              responsive={owlResponsive.responsive}
+            >
+              {certificatesMain.map((e) => {
+                return (
+                  <div class="owlItem p-2">
+                    <div className="container text-center">
+                      <p>
+                        <strong>{e.cName}</strong>
+                      </p>
+                      <p className="d-flex justify-content-around align-items-center">
+                        <span>{e.cBy}</span>
+                        <span>|</span>
+                        <span>{e.cDate}</span>
+                      </p>
+                      <p><a href={e.cLink} target="_blank"><button className="btn btn-primary btn-sm" type="button">View Here</button></a></p>
+                    </div>
+                  </div>
+                );
+              })}
 
-            here will be the UX design and javascript and react basics as well as the C++ udemy!!.
-
+              
+            </OwlCarousel>
           </div>
         </div>
       </section>
     </>
   );
 }
-
 
 export default SkillsAndCertificates;
