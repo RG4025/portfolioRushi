@@ -1,24 +1,33 @@
 import React from "react";
 import * as icon from "react-bootstrap-icons";
 function About() {
+
+  
   const aboutMain = [
     {
-      icons: <icon.CodeSquare />,
+      // icons: <icon.CodeSquare />,
+      icons:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89Zqyiu5EhY4uDRASwggSgbkfI2JvBQmJPxuG4WcZJA&s",
       aboutTitle: "Frontend Dev",
       aboutContent: "lorem ipsum doller sit ammet.",
     },
     {
-      icons: <icon.CodeSlash />,
+      // icons: <icon.CodeSquare />,
+      icons:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89Zqyiu5EhY4uDRASwggSgbkfI2JvBQmJPxuG4WcZJA&s",
       aboutTitle: "Backend Dev",
       aboutContent: "lorem ipsum doller sit ammet.",
     },
     {
-      icons: <icon.CodeSlash />,
+      icons:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89Zqyiu5EhY4uDRASwggSgbkfI2JvBQmJPxuG4WcZJA&s",
       aboutTitle: "API Integration",
       aboutContent: "lorem ipsum doller sit ammet.",
     },
     {
-      icons: <icon.CodeSquare />,
+      // icons: <icon.CodeSquare />,
+      icons:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89Zqyiu5EhY4uDRASwggSgbkfI2JvBQmJPxuG4WcZJA&s",
       aboutTitle: "Version Control",
       aboutContent: "lorem ipsum doller sit ammet.",
     },
@@ -60,9 +69,11 @@ function About() {
               {aboutMain.map((e) => {
                 return (
                   <div className="col py-3 ">
-                    <div className="container">
-                      <div className="p-3 aboutChildTwoParent text-start d-flex justify-content-evenly  align-items-center ">
-                        <div className="aboutChildTwo">{e.icons}</div>
+                    <div className="">
+                      <div className="p-1 px-sm-0 py-sm-3 aboutChildTwoParent text-start d-flex justify-content-evenly  align-items-center ">
+                        <div className="aboutChildTwo mx-2 mx-sm-1 mx-md-0">
+                          <img src={e.icons} alt="" className="img-fluid" />
+                        </div>
                         <div>
                           <strong className="fs-6 text-light">
                             {e.aboutTitle}

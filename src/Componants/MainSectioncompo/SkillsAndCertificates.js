@@ -4,6 +4,11 @@ import css_logo from "../../Images/css_logo.png";
 import js_logo from "../../Images/js_logo.png";
 import jquery_logo from "../../Images/jquery_logo.jpg";
 import react_logo from "../../Images/react_logo.png";
+import java_logo from "../../Images/java_logo.png";
+import jdbc_logo from "../../Images/jdbc_logo.png";
+import mysql_logo from "../../Images/mysql_logo.jpg";
+import servlet_logo2 from "../../Images/servlet_logo2.jpg";
+import springboot_logo from "../../Images/springboot_logo.png";
 import $ from "jquery";
 
 
@@ -33,23 +38,23 @@ function SkillsAndCertificates() {
   ];
   const skillBackend = [
     {
-      img: html_logo,
+      img: java_logo,
       title: "Java",
     },
     {
-      img: css_logo,
+      img: jdbc_logo,
       title: "JDBC",
     },
     {
-      img: js_logo,
+      img: servlet_logo2,
       title: "Servlet",
     },
     {
-      img: jquery_logo,
+      img: springboot_logo,
       title: "Springboot",
     },
     {
-      img: react_logo,
+      img: mysql_logo,
       title: "MySQL",
     },
   ];

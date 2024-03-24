@@ -23,8 +23,7 @@ i{
 /* Sidebar section css starts */
 
 
-.sidebar{
-}
+
 
 .sidebarMain{
   /* border-right: 2px dotted #F9D66E; */
@@ -51,10 +50,14 @@ i{
   border-bottom: 1px dotted #F9D66E ;
 }
 
+.socialOne{
+  border-bottom: 1px dotted #F9D66E ;
+}
+
 .sidebarChildOne small{
   background-color: #353536;
-  padding: 3px;
-  border: 1px solid gray;
+  padding: 4px;
+  border: 2px solid gray;
   border-radius: 10px;
 }
 
@@ -68,9 +71,19 @@ i{
 
 .socialTwoOne{
   background-color: #343436;
-  border: 1px solid gray;
-  color: #F9D66E;
+  border: 2px solid gray;
+  color: gray;
   font-size: 25px;
+  transition: all ease 0.5s;
+}
+.socialTwoOne:hover{
+  transform: scale(1.04);
+  border: 2px solid #F9D66E;
+
+}
+
+.socialTwoOne i{
+  color: #F9D66E;
 }
 
 .socialTwo strong{
@@ -201,8 +214,15 @@ i{
   .aboutChildTwo{
     background-color: #353536;
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 25px;
+  }
+  .aboutChildTwo img{
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
   }
 
   .aboutSectionParentTwo{
@@ -406,6 +426,10 @@ i{
   .navbarMainSection {
     top: 0%;
     right: 6%;
+  }
+  .aboutChildTwo img{
+    width: 80px;
+    height: 80px;
   }
 }
 

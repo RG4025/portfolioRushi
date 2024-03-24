@@ -6,7 +6,6 @@ function Contact() {
 
   useEffect(() => {
     // let year = document.getElementById("yearMain");
-
     let currYear = new Date();
     yearone.current.innerText = `All Rights Reserved @${currYear.getFullYear()}`;
     // yearone.current.innerText=currYear.getFullYear();

@@ -22,7 +22,7 @@ function Sidebar() {
             <div className="socialTwo d-none d-md-block d-xl-none py-2">
               <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                 <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                  <icon.Envelope />
+                  <icon.Envelope className="text-danger"/>
                 </div>
                 <div className="d-flex flex-column ">
                   <span className="text-uppercase text-light">Email</span>
@@ -67,7 +67,7 @@ function Sidebar() {
 
             <div className="d-flex justify-content-start align-items-center">
               <div className="container">
-                <div className="socialTwo d-block  d-xl-flex flex-column gap-xl-3 d-md-none d-xl-block py-2">
+                <div className="socialTwo d-block  d-xl-flex flex-column gap-xl-2 d-md-none d-xl-block py-2">
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                     <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
                       <icon.Envelope />
@@ -87,8 +87,6 @@ function Sidebar() {
                       <span className="text-uppercase text-light">Contact</span>
                       <strong className=" fw-medium">9130817064</strong>
                     </div>
-
-                    
                   </div>
                 </div>
               </div>
