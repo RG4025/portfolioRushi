@@ -1,5 +1,6 @@
 import React from "react";
 import * as icon from "react-bootstrap-icons";
+import resume from '../../CertificatesPDF/RushikeshGuravResume.pdf'
 function About() {
 
   
@@ -55,6 +56,11 @@ function About() {
               desire to continuously learn and improve, allowing me to
               contribute meaningfully to the success of the organizations I work
               with and my own professional journey.
+            </p>
+            <p className="py-2">
+              <a href={resume} target="_blank">
+              <button className="btn btn-primary btn-sm fw-bold">RESUME</button>
+              </a>
             </p>
           </div>
         </div>
