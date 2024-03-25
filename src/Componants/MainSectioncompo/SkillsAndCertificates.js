@@ -1,4 +1,5 @@
 import React from "react";
+import * as icon from 'react-bootstrap-icons';
 import html_logo from "../../Images/html_logo.jpeg";
 import css_logo from "../../Images/css_logo.png";
 import js_logo from "../../Images/js_logo.png";
@@ -98,19 +99,19 @@ function SkillsAndCertificates() {
     {
       cName: "C++",
       cDate: "2023",
-      cBy: "Meta",
+      cBy: "Udemy",
       cLink: udemyC,
     },
     {
       cName: "MS-CIT",
       cDate: "2023",
-      cBy: "Meta",
+      cBy: "MSRTC",
       cLink: mscit,
     },
     {
       cName: "UX Design",
       cDate: "2023",
-      cBy: "Meta",
+      cBy: "Google",
       cLink: uxDesign,
     },
   ];
@@ -186,7 +187,7 @@ function SkillsAndCertificates() {
                         <strong>{e.cName}</strong>
                       </p>
                       <p className="d-flex justify-content-around align-items-center">
-                        <span>{e.cBy}</span>
+                        <span>From : <strong>{e.cBy}</strong></span>  
                         <span>|</span>
                         <span>{e.cDate}</span>
                       </p>

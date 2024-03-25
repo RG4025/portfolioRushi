@@ -121,9 +121,6 @@ i {
   overflow-y: scroll;
 }
 
-/* .nav .navLink a:active{
-  background-color: #fff;
-} */
 
 
 .navItem {
@@ -344,13 +341,6 @@ textarea:focus {
   outline: #F9D66E;
 }
 
-/* .contactMain button{
-  border: 1px solid gray;
-  outline: none;
-  background-color: #F9D66E;
-  color: black;
-  border-radius: 10px;
-} */
 
 
 .contactIcon {
@@ -378,6 +368,29 @@ textarea:focus {
 }
 
 /* Contact Section ends here */
+
+
+/* Project section css Starts Here */
+
+.sectionProject select{
+  outline: none;
+  color: #fff;
+  
+}
+.sectionProject select option{
+ background-color: #343436;
+ border-radius: 10px;
+ margin: 5px;
+}
+
+.projectCard{
+  background-color: #464648;
+  overflow: hidden;
+}
+
+
+
+/* Project section css Ends Here */
 
 
 /* Mainsectioncss ends here */
