@@ -1,9 +1,22 @@
-import React from "react";
+import React,{useRef} from "react";
+import { motion } from "framer-motion";
 
-function ProjectCard({ data }) {
+
+
+function ProjectCard({ data , reference}) {
+
+
   return (
+
+
     <>
-      <div className="py-2 py-sm-3 py-lg-4">
+      <motion.div
+        drag
+        dragConstraints={reference}
+        whileDrag={{scale:1.2}}
+        dragElastic={1.2}
+        className="py-2 py-sm-3 py-lg-4"
+      >
         <div className="col projectCard rounded-4 ">
           <div className=" text-light ">
             <div className={data.pColor}>
@@ -56,7 +69,7 @@ function ProjectCard({ data }) {
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div
         class="modal fade  mt-4 "

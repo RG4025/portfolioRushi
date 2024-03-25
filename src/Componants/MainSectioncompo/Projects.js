@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useRef} from "react";
 import ProjectCard from "./ProjectCard";
 import reactProjectImg from "../../Images/reactProject2.png";
 import rgconsultingImg from '../../Images/rgconsultingImg.png';
@@ -9,7 +9,14 @@ import gymImg from '../../Images/gymImg.png';
 import confey from '../../Images/confeyImg.png';
 import satyamevImg from '../../Images/satyamevImg.png';
 import rgphotogaphy from '../../Images/rgphotography.png';
+import { motion } from "framer-motion";
+
+
 function Projects() {
+
+  const parentRef = useRef(null);
+
+
   const [projects, setProjects] = useState(0);
 
   const handleSetProject = (e) => {
@@ -98,15 +105,15 @@ function Projects() {
       pLike: 0,
       pColor:"bg-primary"
     },
-    {
-      pStatus: { selectedStatus: 2 },
-      pName: "CRUD Operation",
-      pImage: reactProjectImg,
-      pTech: "SpringBoot",
-      pLink: "",
-      pLike: 0,
-      pColor:"bg-success"
-    },
+    // {
+    //   pStatus: { selectedStatus: 2 },
+    //   pName: "CRUD Operation",
+    //   pImage: reactProjectImg,
+    //   pTech: "SpringBoot",
+    //   pLink: "",
+    //   pLike: 0,
+    //   pColor:"bg-success"
+    // },
   ];
 
   const filteredProject = projectData.filter((e) => {
@@ -121,7 +128,8 @@ function Projects() {
 
   return (
     <>
-      <div className="container">
+      <div
+      className="container">
         <div className="sectionProject d-flex justify-content-start align-items-center gap-3">
           <div className="d-flex justify-content-end align-items-center pb-2">
             <h4 className="aboutTitle">Project's :</h4>
@@ -144,9 +152,9 @@ function Projects() {
           </select>
         </div>
         <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 py-3 ">
+          <div ref={parentRef} className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 py-3 ">
             {filteredProject.map((item, index) => (
-              <ProjectCard data={item} />
+              <ProjectCard data={item} reference={parentRef} />
             ))}
           </div>
         </div>

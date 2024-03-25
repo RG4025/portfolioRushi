@@ -48,17 +48,17 @@ function Sidebar() {
             <div className="socialOne py-3 mx-auto d-flex justify-content-center align-items-center gap-3">
               <div className=" d-flex text-warning gap-4">
                 <span className="fs-5">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/rushikesh-gurav-2694b0234/" target="_blank">
                   <i class="bi bi-linkedin"></i>
                   </a>
                 </span>
                 <span className="fs-5">
-                  <a href="#">
+                  <a href="https://github.com/RG4025" target="_blank">
                   <i class="bi bi-github"></i>
                   </a>
                 </span>
                 <span className="fs-5">
-                  <a href="#">
+                  <a href="https://twitter.com/RG4025" target="_blank">
                   <i class="bi bi-twitter-x"></i>
                   </a>
                 </span>
