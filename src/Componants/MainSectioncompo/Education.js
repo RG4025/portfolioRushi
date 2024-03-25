@@ -6,19 +6,22 @@ function Education() {
       eTitle: "Java Fullstack Development",
       eDate: "Mar 2024",
       eContent:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus vitae dignissimos eaque dolorum quibusdam modi laborum iste accusantium nostrum.",
+        "I became a full-stack Java developer at Envision Institute in Pune, where I also gained expertise in front-end and back-end technologies.",
+      eGrade: null,
     },
     {
       eTitle: "Bachlor Of Computer Application (BCA)",
       eDate: "2020 — 2023",
       eContent:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus vitae dignissimos eaque dolorum quibusdam modi laborum iste accusantium nostrum.",
+        "completed the graduation program at Bharti Vidyapeeth Kolhapur, deemed to be university Pune, in computer application.",
+      eGrade: `A+, CGPA - 9.07`,
     },
     {
       eTitle: " Higher Secondary School (HSC)",
       eDate: "2017 — 2019",
       eContent:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus vitae dignissimos eaque dolorum quibusdam modi laborum iste accusantium nostrum.",
+        "completed the HSC with the PCM-It group at B.Y. College Peth Vadgaon.",
+      eGrade: "63.80%",
     },
   ];
 
@@ -39,15 +42,10 @@ function Education() {
             {educationMain.map((e) => {
               return (
                 <li class="educationItem">
-                  <h5 class="h5 educationItem-title">
-                    {e.eTitle}
-                  </h5>
-
+                  <h5 class="h5 educationItem-title">{e.eTitle}</h5>
                   <span>{e.eDate}</span>
-
-                  <p class="educationText">
-                    {e.eContent}
-                  </p>
+                  <p class="educationText">{e.eContent}</p>
+                  {e.eGrade == null ? " " : <p>Grade : {e.eGrade}</p>}
                 </li>
               );
             })}

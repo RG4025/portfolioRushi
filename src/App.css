@@ -445,7 +445,7 @@ textarea:focus {
 .educationItem::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: -33px;
   height: 6px;
   width: 6px;
@@ -455,8 +455,6 @@ textarea:focus {
 }
 
 .educationText {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
@@ -583,6 +581,8 @@ textarea:focus {
   .aboutChildTwo img {
     width: 80px;
     height: 80px;
+    object-fit: cover;
+    background-size: cover;
   }
 }
 

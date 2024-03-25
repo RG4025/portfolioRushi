@@ -6,8 +6,10 @@ function ProjectCard({ data }) {
       <div className="py-2 py-sm-3 py-lg-4">
         <div className="col projectCard rounded-4 ">
           <div className=" text-light ">
-            <div className="bg-primary d-flex justify-content-center align-items-center text-light">
-              <p className="pt-2 fw-bold">{data.pName}</p>
+            <div className={data.pColor}>
+              <div className="d-flex justify-content-center align-items-center text-light">
+                <p className="pt-2 fw-bold">{data.pName}</p>
+              </div>
             </div>
 
             <div className="">
@@ -71,7 +73,6 @@ function ProjectCard({ data }) {
                 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1"
               ></iframe>
             </div>
-            
           </div>
         </div>
       </div>

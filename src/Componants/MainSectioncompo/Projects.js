@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import reactProjectImg from "../../Images/reactProject2.png";
-
+import rgconsultingImg from '../../Images/rgconsultingImg.png';
+import uomoImg from '../../Images/uomoImg.png';
+import hollyImg from '../../Images/hollyImg.png';
+import reflectonImg from '../../Images/reflectorImg.png';
+import gymImg from '../../Images/gymImg.png';
+import confey from '../../Images/confeyImg.png';
+import satyamevImg from '../../Images/satyamevImg.png';
+import rgphotogaphy from '../../Images/rgphotography.png';
 function Projects() {
   const [projects, setProjects] = useState(0);
 
@@ -15,72 +22,81 @@ function Projects() {
       pName: "Real Market Dashboard",
       pImage: reactProjectImg,
       pTech: "React Js",
-      pLink: "",
+      pLink: "https://rg4025.github.io/ReactDashboard/",
       pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG1",
-      pImage: reactProjectImg,
-      pTech: "React Js",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG2",
-      pImage: reactProjectImg,
-      pTech: "Html,CSS,Bootstrap",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG1",
-      pImage: reactProjectImg,
-      pTech: "Html,CSS,Bootstrap",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG1",
-      pImage: reactProjectImg,
-      pTech: "Html,CSS,Bootstrap",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG1",
-      pImage: reactProjectImg,
-      pTech: "Html,CSS,Bootstrap",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 1 },
-      pName: "RG1",
-      pImage: reactProjectImg,
-      pTech: "Html,CSS,Bootstrap",
-      pLink: "",
-      pLike: 0,
-    },
-    {
-      pStatus: { selectedStatus: 2 },
-      pName: "Satyamev Granthalay",
-      pImage: reactProjectImg,
-      pTech: "PHP,Html,Bootstrap",
-      pLink: "",
-      pLike: 0,
+      pColor:"bg-danger"
     },
     {
       pStatus: { selectedStatus: 2 },
       pName: "RG Photography",
-      pImage: reactProjectImg,
+      pImage: rgphotogaphy,
       pTech: "Java,MySQL,Jsp,JDBC",
       pLink: null,
       pLike: 0,
+      pColor:"bg-success"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "GYM",
+      pImage: gymImg,
+      pTech: "Html,CSS,Bootstrap",
+      pLink: "https://rg4025.github.io/GymProject/",
+      pLike: 0,
+      pColor:"bg-primary"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "RG Consulting",
+      pImage: rgconsultingImg,
+      pTech: "React Js",
+      pLink: "https://rg4025.github.io/RGConsulting/",
+      pLike: 0,
+      pColor:"bg-danger"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "UOMO Fashion",
+      pImage: uomoImg,
+      pTech: "Html,CSS,Bootstrap",
+      pLink: "https://rg4025.github.io/NewProject/",
+      pLike: 0,
+      pColor:"bg-primary"
+    },
+    {
+      pStatus: { selectedStatus: 2 },
+      pName: "Satyamev Granthalay",
+      pImage: satyamevImg,
+      pTech: "PHP,Html,Bootstrap",
+      pLink: "http://satyamevsevasanstha.000webhostapp.com/",
+      pLike: 0,
+      pColor:"bg-success"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "Holly Hotel",
+      pImage: hollyImg,
+      pTech: "Html,CSS,Bootstrap",
+      pLink: "https://rg4025.github.io/HoolyHotel/",
+      pLike: 0,
+      pColor:"bg-primary"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "Reflector Photo",
+      pImage: reflectonImg,
+      pTech: "Html,CSS,Bootstrap",
+      pLink: "https://rg4025.github.io/Reflector/",
+      pLike: 0,
+      pColor:"bg-primary"
+    },
+    {
+      pStatus: { selectedStatus: 1 },
+      pName: "Confey Event",
+      pImage: confey,
+      pTech: "Html,CSS,Bootstrap",
+      pLink: "https://rg4025.github.io/ConfeyEvent/",
+      pLike: 0,
+      pColor:"bg-primary"
     },
     {
       pStatus: { selectedStatus: 2 },
@@ -89,6 +105,7 @@ function Projects() {
       pTech: "SpringBoot",
       pLink: "",
       pLike: 0,
+      pColor:"bg-success"
     },
   ];
 
