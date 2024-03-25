@@ -1,27 +1,26 @@
-import React from 'react'
+import React from "react";
 
 function Education() {
-
-  const educationMain =[
+  const educationMain = [
     {
-      eDegree:'',
-      eFrom:'',
-      eDate:'',
-      eContent:''
+      eDegree: "",
+      eFrom: "",
+      eDate: "",
+      eContent: "",
     },
-  ]
+  ];
 
   return (
     <>
+      <section className="sectionEducation">
+        <div className="container w-50 h-50">
 
-        <section className="sectionEducation">
-          <div className=''>
-
-          </div>
-        </section>
-
+        
+          
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default Education
+export default Education;

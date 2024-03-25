@@ -9,6 +9,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jquery": "^3.7.1",
+    "lightbox2": "^2.11.4",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.11.3",
     "react-dom": "^18.2.0",
@@ -43,6 +44,4 @@
   "devDependencies": {
     "react-router-dom": "^6.22.2"
   }
-  
 }
-

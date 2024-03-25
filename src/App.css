@@ -388,7 +388,10 @@ textarea:focus {
   overflow: hidden;
 }
 
-
+.projectDemoIframe{
+  width : 100%;
+  height: 100%;
+}
 
 /* Project section css Ends Here */
 
@@ -482,6 +485,24 @@ textarea:focus {
   .navbarScroll li {
     min-width: 10%;
     margin: 0 10px;
+  }
+
+  #exampleModal{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    
+  }
+
+  .modal-body{
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+  }
+  
+  .projectDemoIframe{
+    width: 100%;
+    height: 100%;
   }
 }
 
