@@ -10,7 +10,6 @@ import jdbc_logo from "../../Images/jdbc_logo.png";
 import mysql_logo from "../../Images/mysql_logo.jpg";
 import servlet_logo2 from "../../Images/servlet_logo2.jpg";
 import springboot_logo from "../../Images/springboot_logo.png";
-import $ from "jquery";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";

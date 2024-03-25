@@ -1,4 +1,7 @@
-* {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,16 +60,16 @@ i {
 .sidebarChildOne small {
   background-color: #353536;
   padding: 4px;
-  border: 2px solid gray;
+  border: 2px solid #F9D66E;
   border-radius: 10px;
 }
 
 
-.socialOne a {
+.socialOne a i{
   color: #F9D66E;
 }
 
-.socialOne a:hover {
+.socialOne a:hover i{
   color: #f6c637;
 }
 
@@ -86,6 +89,10 @@ i {
 
 .socialTwoOne i {
   color: #F9D66E;
+  transition: all ease 0.5s;
+}
+.socialTwoOne:hover .socialTwoOne i {
+  transform: scale(0.90);
 }
 
 .socialTwo strong {
@@ -256,16 +263,16 @@ i {
   background: #F9D66E !important;
 }
 
-.owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span {
   display: none;
 }
 
-.owlItem{
+.owlItem {
   background-color: #1D1D1E;
   border-radius: 10px;
 }
 
-.owl-carousel .owl-item{
+.owl-carousel .owl-item {
   border-bottom: none;
 }
 
@@ -372,28 +379,89 @@ textarea:focus {
 
 /* Project section css Starts Here */
 
-.sectionProject select{
+.sectionProject select {
   outline: none;
   color: #fff;
-  
-}
-.sectionProject select option{
- background-color: #343436;
- border-radius: 10px;
- margin: 5px;
+
 }
 
-.projectCard{
+.sectionProject select option {
+  background-color: #343436;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.projectCard {
   background-color: #464648;
   overflow: hidden;
 }
 
-.projectDemoIframe{
-  width : 100%;
+.projectDemoIframe {
+  width: 100%;
   height: 100%;
 }
 
 /* Project section css Ends Here */
+
+
+/* Education Section Css Starts Here */
+
+
+.education-list {
+  font-size: 15px;
+  margin-left: 19px;
+}
+
+.educationItem {
+  position: relative;
+}
+
+.educationItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.educationItem-title {
+  line-height: 1.3;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+.education-list span {
+  color: #F9D66E;
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.educationItem:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: #F9D66E;
+}
+
+.educationItem::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px crimson;
+}
+
+.educationText {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+
+/* Education Section Css Ends Here */
 
 
 /* Mainsectioncss ends here */
@@ -487,20 +555,20 @@ textarea:focus {
     margin: 0 10px;
   }
 
-  #exampleModal{
+  #exampleModal {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    
+
   }
 
-  .modal-body{
+  .modal-body {
     width: 100%;
     height: 400px;
     overflow-y: hidden;
   }
-  
-  .projectDemoIframe{
+
+  .projectDemoIframe {
     width: 100%;
     height: 100%;
   }

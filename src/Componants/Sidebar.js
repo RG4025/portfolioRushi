@@ -21,8 +21,8 @@ function Sidebar() {
             </div>
             <div className="socialTwo d-none d-md-block d-xl-none py-2">
               <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
-                <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                  <icon.Envelope className="text-danger"/>
+                <div className="socialTwoOne d-flex justify-content-center align-items-center p-1  rounded-3">
+                <i class="bi bi-envelope"></i>
                 </div>
                 <div className="d-flex flex-column ">
                   <span className="text-uppercase text-light">Email</span>
@@ -33,7 +33,7 @@ function Sidebar() {
               </div>
               <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                 <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                  <icon.Telephone />
+                <i class="bi bi-telephone"></i>
                 </div>
                 <div className="d-flex flex-column ">
                   <span className="text-uppercase text-light">Contact</span>
@@ -46,20 +46,20 @@ function Sidebar() {
 
           <div id="toggleNav" className="sidebarChildTwo mx-auto">
             <div className="socialOne py-3 mx-auto d-flex justify-content-center align-items-center gap-3">
-              <div className=" d-flex gap-4">
+              <div className=" d-flex text-warning gap-4">
                 <span className="fs-5">
                   <a href="#">
-                    <icon.Linkedin />
+                  <i class="bi bi-linkedin"></i>
                   </a>
                 </span>
                 <span className="fs-5">
                   <a href="#">
-                    <icon.Github />
+                  <i class="bi bi-github"></i>
                   </a>
                 </span>
                 <span className="fs-5">
                   <a href="#">
-                    <icon.TwitterX />
+                  <i class="bi bi-twitter-x"></i>
                   </a>
                 </span>
               </div>
@@ -69,8 +69,8 @@ function Sidebar() {
               <div className="container">
                 <div className="socialTwo d-block  d-xl-flex flex-column gap-xl-2 d-md-none d-xl-block py-2">
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
-                    <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                      <icon.Envelope />
+                    <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
+                    <i class="bi bi-envelope"></i>
                     </div>
                     <div className="d-flex flex-column ">
                       <span className="text-uppercase ">Email</span>
@@ -80,8 +80,8 @@ function Sidebar() {
                     </div>
                   </div>
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
-                    <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                      <icon.Telephone />
+                    <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
+                    <i class="bi bi-telephone"></i>
                     </div>
                     <div className="d-flex flex-column">
                       <span className="text-uppercase text-light">Contact</span>
