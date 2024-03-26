@@ -1,5 +1,5 @@
 import React from "react";
-import * as icon from 'react-bootstrap-icons';
+import * as icon from "react-bootstrap-icons";
 import html_logo from "../../Images/html_logo.jpeg";
 import css_logo from "../../Images/css_logo.png";
 import js_logo from "../../Images/js_logo.png";
@@ -13,11 +13,12 @@ import springboot_logo from "../../Images/springboot_logo.png";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import udemyC from '../../CertificatesPDF/udemyC++.pdf';
-import reactCer from '../../CertificatesPDF/CourseraReactBasics.pdf';
-import mscit from '../../CertificatesPDF/MS-CIT_Rushi.pdf';
-import Javascript from '../../CertificatesPDF/javascript_Rushi.pdf';
-import uxDesign from '../../CertificatesPDF/CourseraRushikeshGurav.pdf';
+import udemyC from "../../CertificatesPDF/udemyC++.pdf";
+import reactCer from "../../CertificatesPDF/CourseraReactBasics.pdf";
+import mscit from "../../CertificatesPDF/MS-CIT_Rushi.pdf";
+import Javascript from "../../CertificatesPDF/javascript_Rushi.pdf";
+import uxDesign from "../../CertificatesPDF/CourseraRushikeshGurav.pdf";
+import { motion } from "framer-motion";
 
 function SkillsAndCertificates() {
   const skillFrontend = [
@@ -125,7 +126,17 @@ function SkillsAndCertificates() {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
             {skillFrontend.map((e, index) => {
               return (
-                <div className="col py-2 " key={index}>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ rotate: 360, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                  className="col py-2 "
+                  key={index}
+                >
                   <div className="container skillChildOne p-3  d-flex flex-column justify-content-center align-items-center">
                     <div className="skillImage d-flex justify-content-center align-items-center">
                       <img src={e.img} alt="Language" className="img-fluid" />
@@ -134,7 +145,7 @@ function SkillsAndCertificates() {
                       <span>{e.title}</span>{" "}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -146,7 +157,17 @@ function SkillsAndCertificates() {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
             {skillBackend.map((e, index) => {
               return (
-                <div className="col py-2 " key={index}>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ rotate: -360, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                  className="col py-2 "
+                  key={index}
+                >
                   <div className="container skillChildOne p-3  d-flex flex-column justify-content-center align-items-center">
                     <div className="skillImage d-flex justify-content-center align-items-center">
                       <img src={e.img} alt="Language" className="img-fluid" />
@@ -156,7 +177,7 @@ function SkillsAndCertificates() {
                       <span>{e.title}</span>{" "}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -186,17 +207,26 @@ function SkillsAndCertificates() {
                         <strong>{e.cName}</strong>
                       </p>
                       <p className="d-flex justify-content-around align-items-center">
-                        <span>From : <strong>{e.cBy}</strong></span>  
+                        <span>
+                          From : <strong>{e.cBy}</strong>
+                        </span>
                         <span>|</span>
                         <span>{e.cDate}</span>
                       </p>
-                      <p><a href={e.cLink} target="_blank"><button className="btn btn-primary btn-sm" type="button">View Here</button></a></p>
+                      <p>
+                        <a href={e.cLink} target="_blank">
+                          <button
+                            className="btn btn-primary btn-sm"
+                            type="button"
+                          >
+                            View Here
+                          </button>
+                        </a>
+                      </p>
                     </div>
                   </div>
                 );
               })}
-
-              
             </OwlCarousel>
           </div>
         </div>

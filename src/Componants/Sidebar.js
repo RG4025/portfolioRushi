@@ -2,9 +2,9 @@ import React, { useRef, useEffect } from "react";
 import "../App.css";
 import * as icon from "react-bootstrap-icons";
 import myImage from "../Images/myImage.jpg";
+import { motion } from "framer-motion";
 
 function Sidebar() {
- 
   return (
     <>
       <section className="sidebarMain">
@@ -22,7 +22,7 @@ function Sidebar() {
             <div className="socialTwo d-none d-md-block d-xl-none py-2">
               <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                 <div className="socialTwoOne d-flex justify-content-center align-items-center p-1  rounded-3">
-                <i class="bi bi-envelope"></i>
+                  <i class="bi bi-envelope"></i>
                 </div>
                 <div className="d-flex flex-column ">
                   <span className="text-uppercase text-light">Email</span>
@@ -33,13 +33,12 @@ function Sidebar() {
               </div>
               <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                 <div className="socialTwoOne d-flex justify-content-center align-items-center p-2  rounded-3">
-                <i class="bi bi-telephone"></i>
+                  <i class="bi bi-telephone"></i>
                 </div>
                 <div className="d-flex flex-column ">
                   <span className="text-uppercase text-light">Contact</span>
                   <strong className=" fw-medium">9130817064</strong>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -48,18 +47,21 @@ function Sidebar() {
             <div className="socialOne py-3 mx-auto d-flex justify-content-center align-items-center gap-3">
               <div className=" d-flex text-warning gap-4">
                 <span className="fs-5">
-                  <a href="https://www.linkedin.com/in/rushikesh-gurav-2694b0234/" target="_blank">
-                  <i class="bi bi-linkedin"></i>
+                  <a
+                    href="https://www.linkedin.com/in/rushikesh-gurav-2694b0234/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin"></i>
                   </a>
                 </span>
                 <span className="fs-5">
                   <a href="https://github.com/RG4025" target="_blank">
-                  <i class="bi bi-github"></i>
+                    <i class="bi bi-github"></i>
                   </a>
                 </span>
                 <span className="fs-5">
                   <a href="https://twitter.com/RG4025" target="_blank">
-                  <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-twitter-x"></i>
                   </a>
                 </span>
               </div>
@@ -69,8 +71,8 @@ function Sidebar() {
               <div className="container">
                 <div className="socialTwo d-block  d-xl-flex flex-column gap-xl-2 d-md-none d-xl-block py-2">
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
-                    <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
-                    <i class="bi bi-envelope"></i>
+                    <div className="socialTwoOne d-flex justify-content-center align-items-center p-1  rounded-3">
+                      <i class="bi bi-envelope"></i>
                     </div>
                     <div className="d-flex flex-column ">
                       <span className="text-uppercase ">Email</span>
@@ -81,7 +83,7 @@ function Sidebar() {
                   </div>
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
                     <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
-                    <i class="bi bi-telephone"></i>
+                      <i class="bi bi-telephone"></i>
                     </div>
                     <div className="d-flex flex-column">
                       <span className="text-uppercase text-light">Contact</span>

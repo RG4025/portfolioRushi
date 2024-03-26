@@ -9,7 +9,6 @@ import gymImg from '../../Images/gymImg.png';
 import confey from '../../Images/confeyImg.png';
 import satyamevImg from '../../Images/satyamevImg.png';
 import rgphotogaphy from '../../Images/rgphotography.png';
-import { motion } from "framer-motion";
 
 
 function Projects() {
