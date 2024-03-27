@@ -71,7 +71,7 @@ function Sidebar() {
               <div className="container">
                 <div className="socialTwo d-block  d-xl-flex flex-column gap-xl-2 d-md-none d-xl-block py-2">
                   <div className="d-flex py-2 gap-2 justify-content-flex-start align-items-center">
-                    <div className="socialTwoOne d-flex justify-content-center align-items-center p-1  rounded-3">
+                    <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
                       <i class="bi bi-envelope"></i>
                     </div>
                     <div className="d-flex flex-column ">

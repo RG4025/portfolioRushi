@@ -2,9 +2,10 @@ import Swal from "sweetalert2";
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import * as icon from "react-bootstrap-icons";
-
+import { motion } from "framer-motion";
 function Contact() {
   const yearone = useRef();
+  const iconRef = useRef();
 
   useEffect(() => {
     // let year = document.getElementById("yearMain");
@@ -55,7 +56,6 @@ function Contact() {
     }, 5000);
   }
 
-
   return (
     <>
       <section className="sectionContact w-100 mt-3">
@@ -102,22 +102,49 @@ function Contact() {
                   ></textarea>
                 </div>
                 <div className="d-flex gap-2 justify-content-between align-items-center">
-                  <ul class="list-unstyled gap-1 gap-sm-2 d-flex justify-content-center align-items-center">
-                    <li class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center">
-                      <a target="_blank" class="text-decoration-none" href="https://www.linkedin.com/in/rushikesh-gurav-2694b0234/">
+                  <ul
+                    ref={iconRef}
+                    class="list-unstyled gap-1 gap-sm-2 d-flex justify-content-center align-items-center"
+                  >
+                    <motion.li
+                      drag
+                      dragConstraints={iconRef}
+                      class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
+                    >
+                      <a
+                        target="_blank"
+                        class="text-decoration-none"
+                        href="https://www.linkedin.com/in/rushikesh-gurav-2694b0234/"
+                      >
                         <icon.Linkedin />
                       </a>
-                    </li>
-                    <li class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center">
-                      <a target="_blank" class="text-decoration-none" href="https://github.com/RG4025">
+                    </motion.li>
+                    <motion.li
+                      drag
+                      dragConstraints={iconRef}
+                      class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
+                    >
+                      <a
+                        target="_blank"
+                        class="text-decoration-none"
+                        href="https://github.com/RG4025"
+                      >
                         <icon.Github />
                       </a>
-                    </li>
-                    <li class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center">
-                      <a target="_blank" class="text-decoration-none" href="https://twitter.com/RG4025">
+                    </motion.li>
+                    <motion.li
+                      drag
+                      dragConstraints={iconRef}
+                      class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
+                    >
+                      <a
+                        target="_blank"
+                        class="text-decoration-none"
+                        href="https://twitter.com/RG4025"
+                      >
                         <icon.TwitterX />
                       </a>
-                    </li>
+                    </motion.li>
                   </ul>
                   <button
                     className="p-1 p-sm-2 fw-bold btn btn-secondary btn-sm "

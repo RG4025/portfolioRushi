@@ -1,9 +1,8 @@
 import React from "react";
 import * as icon from "react-bootstrap-icons";
-import resume from '../../CertificatesPDF/RushikeshGuravResume.pdf'
+import resume from "../../CertificatesPDF/RushikeshGuravResume.pdf";
+import { motion } from "framer-motion";
 function About() {
-
-  
   const aboutMain = [
     {
       // icons: <icon.CodeSquare />,
@@ -14,8 +13,7 @@ function About() {
     },
     {
       // icons: <icon.CodeSquare />,
-      icons:
-        "https://img.icons8.com/nolan/512w/backend-development.png",
+      icons: "https://img.icons8.com/nolan/512w/backend-development.png",
       aboutTitle: "Backend Dev",
       aboutContent: "Data Flow, Handling Table Interactivity.",
     },
@@ -34,6 +32,25 @@ function About() {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <section>
@@ -59,7 +76,9 @@ function About() {
             </p>
             <p className="py-2">
               <a href={resume} target="_blank">
-              <button className="btn btn-primary btn-sm fw-bold">RESUME</button>
+                <button className="btn btn-primary btn-sm fw-bold">
+                  RESUME
+                </button>
               </a>
             </p>
           </div>
@@ -71,10 +90,15 @@ function About() {
           </div>
 
           <div className="container">
-            <div className="row row-cols-1 row-cols-md-2">
-              {aboutMain.map((e) => {
+            <motion.div
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="row row-cols-1 row-cols-md-2"
+            >
+              {aboutMain.map((e,index) => {
                 return (
-                  <div className="col py-3 ">
+                  <motion.div key={index} variants={item} className="col py-3 ">
                     <div className="">
                       <div className="p-1 px-sm-0 py-sm-3 aboutChildTwoParent text-start d-flex justify-content-start gap-2  align-items-center ">
                         <div className="aboutChildTwo mx-2 mx-sm-2 ">
@@ -88,10 +112,10 @@ function About() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -194,7 +194,7 @@ function SkillsAndCertificates() {
               margin={10}
               dots={true}
               autoplay={true}
-              autoplayTimeout={3000}
+              autoplayTimeout={2000}
               autoplayHoverPause={true}
               items={5}
               responsive={owlResponsive.responsive}

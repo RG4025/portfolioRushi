@@ -1,20 +1,18 @@
-import React, { useEffect, useState , useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import reactProjectImg from "../../Images/reactProject2.png";
-import rgconsultingImg from '../../Images/rgconsultingImg.png';
-import uomoImg from '../../Images/uomoImg.png';
-import hollyImg from '../../Images/hollyImg.png';
-import reflectonImg from '../../Images/reflectorImg.png';
-import gymImg from '../../Images/gymImg.png';
-import confey from '../../Images/confeyImg.png';
-import satyamevImg from '../../Images/satyamevImg.png';
-import rgphotogaphy from '../../Images/rgphotography.png';
-
+import rgconsultingImg from "../../Images/rgconsultingImg.png";
+import uomoImg from "../../Images/uomoImg.png";
+import hollyImg from "../../Images/hollyImg.png";
+import reflectonImg from "../../Images/reflectorImg.png";
+import gymImg from "../../Images/gymImg.png";
+import confey from "../../Images/confeyImg.png";
+import satyamevImg from "../../Images/satyamevImg.png";
+import rgphotogaphy from "../../Images/rgphotography.png";
+import { motion } from "framer-motion";
 
 function Projects() {
-
   const parentRef = useRef(null);
-
 
   const [projects, setProjects] = useState(0);
 
@@ -30,7 +28,7 @@ function Projects() {
       pTech: "React Js",
       pLink: "https://rg4025.github.io/ReactDashboard/",
       pLike: 0,
-      pColor:"bg-danger"
+      pColor: "bg-danger",
     },
     {
       pStatus: { selectedStatus: 2 },
@@ -39,7 +37,7 @@ function Projects() {
       pTech: "Java,MySQL,Jsp,JDBC",
       pLink: null,
       pLike: 0,
-      pColor:"bg-success"
+      pColor: "bg-success",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -48,7 +46,7 @@ function Projects() {
       pTech: "Html,CSS,Bootstrap",
       pLink: "https://rg4025.github.io/GymProject/",
       pLike: 0,
-      pColor:"bg-primary"
+      pColor: "bg-primary",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -57,7 +55,7 @@ function Projects() {
       pTech: "React Js",
       pLink: "https://rg4025.github.io/RGConsulting/",
       pLike: 0,
-      pColor:"bg-danger"
+      pColor: "bg-danger",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -66,7 +64,7 @@ function Projects() {
       pTech: "Html,CSS,Bootstrap",
       pLink: "https://rg4025.github.io/NewProject/",
       pLike: 0,
-      pColor:"bg-primary"
+      pColor: "bg-primary",
     },
     {
       pStatus: { selectedStatus: 2 },
@@ -75,7 +73,7 @@ function Projects() {
       pTech: "PHP,Html,Bootstrap",
       pLink: "http://satyamevsevasanstha.000webhostapp.com/",
       pLike: 0,
-      pColor:"bg-success"
+      pColor: "bg-success",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -84,7 +82,7 @@ function Projects() {
       pTech: "Html,CSS,Bootstrap",
       pLink: "https://rg4025.github.io/HoolyHotel/",
       pLike: 0,
-      pColor:"bg-primary"
+      pColor: "bg-primary",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -93,7 +91,7 @@ function Projects() {
       pTech: "Html,CSS,Bootstrap",
       pLink: "https://rg4025.github.io/Reflector/",
       pLike: 0,
-      pColor:"bg-primary"
+      pColor: "bg-primary",
     },
     {
       pStatus: { selectedStatus: 1 },
@@ -102,7 +100,7 @@ function Projects() {
       pTech: "Html,CSS,Bootstrap",
       pLink: "https://rg4025.github.io/ConfeyEvent/",
       pLike: 0,
-      pColor:"bg-primary"
+      pColor: "bg-primary",
     },
     // {
     //   pStatus: { selectedStatus: 2 },
@@ -114,6 +112,18 @@ function Projects() {
     //   pColor:"bg-success"
     // },
   ];
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
   const filteredProject = projectData.filter((e) => {
     if (projects == 0) {
@@ -127,8 +137,7 @@ function Projects() {
 
   return (
     <>
-      <div
-      className="container">
+      <div className="container">
         <div className="sectionProject d-flex justify-content-start align-items-center gap-3">
           <div className="d-flex justify-content-end align-items-center pb-2">
             <h4 className="aboutTitle">Project's :</h4>
@@ -151,11 +160,17 @@ function Projects() {
           </select>
         </div>
         <div className="container">
-          <div ref={parentRef} className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 py-3 ">
+          <motion.div
+            ref={parentRef}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 py-3 "
+          >
             {filteredProject.map((item, index) => (
-              <ProjectCard data={item} reference={parentRef} />
+              <ProjectCard data={item} index={index} reference={parentRef} />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

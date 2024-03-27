@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import * as icon from "react-bootstrap-icons";
+import { motion } from "framer-motion";
 function Education() {
   const educationMain = [
     {
@@ -25,10 +26,12 @@ function Education() {
     },
   ];
 
+  const iconRef = useRef();
+
   return (
     <>
-      <section className="sectionEducation">
-        <div className="container">
+      <section className="sectionEducation" ref={iconRef}>
+        <motion.div drag dragConstraints={iconRef} className="container">
           <div className="d-flex justify-content-start align-items-center gap-3 py-2 mb-3">
             <div className="socialTwoOne d-flex justify-content-center align-items-center px-2  rounded-3">
               <i class="bi bi-award-fill"></i>
@@ -38,19 +41,19 @@ function Education() {
             </div>
           </div>
 
-          <ol class="education-list">
+          <motion.ol class="education-list">
             {educationMain.map((e) => {
               return (
-                <li class="educationItem">
+                <motion.li class="educationItem">
                   <h5 class="h5 educationItem-title">{e.eTitle}</h5>
                   <span>{e.eDate}</span>
                   <p class="educationText">{e.eContent}</p>
                   {e.eGrade == null ? " " : <p>Grade : {e.eGrade}</p>}
-                </li>
+                </motion.li>
               );
             })}
-          </ol>
-        </div>
+          </motion.ol>
+        </motion.div>
       </section>
     </>
   );

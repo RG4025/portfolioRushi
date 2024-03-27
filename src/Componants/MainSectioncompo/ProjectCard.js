@@ -1,20 +1,25 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
-
-
-function ProjectCard({ data , reference}) {
-
+function ProjectCard({ data, reference, index }) {
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   return (
-
-
     <>
       <motion.div
         drag
         dragConstraints={reference}
-        whileDrag={{scale:1.2}}
+        whileDrag={{ scale: 1.2 }}
         dragElastic={1.2}
+        key={index}
+        variants={item}
+       
         className="py-2 py-sm-3 py-lg-4"
       >
         <div className="col projectCard rounded-4 ">
