@@ -19,7 +19,6 @@ function ProjectCard({ data, reference, index }) {
         dragElastic={1.2}
         key={index}
         variants={item}
-       
         className="py-2 py-sm-3 py-lg-4"
       >
         <div className="col projectCard rounded-4 ">
@@ -41,18 +40,18 @@ function ProjectCard({ data, reference, index }) {
             </div>
 
             {data.pLink == null ? (
-              <div className="projectCardChild container py-2">
+              <div className="projectCardChild container py-4">
                 <div className="d-flxx justify-content-around align-items-center">
                   <div className="">
                     <a href={data.pLink} target="_blank">
-                      <button
+                      {/* <button
                         type="button"
                         className="btn btn-primary btn-sm"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                       >
                         See Demo
-                      </button>
+                      </button> */}
                     </a>
                   </div>
                   <div className=""></div>

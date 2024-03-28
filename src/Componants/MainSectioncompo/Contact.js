@@ -42,7 +42,7 @@ function Contact() {
           console.log(error.text);
           (function swAlert() {
             Swal.fire(
-              "Sorry for the inconvenience! response is not submitted.."
+              "Sorry for the inconvenience! response is not submitted.., Check your internate connection."
             );
           })();
         }
@@ -107,8 +107,13 @@ function Contact() {
                     class="list-unstyled gap-1 gap-sm-2 d-flex justify-content-center align-items-center"
                   >
                     <motion.li
-                      drag
-                      dragConstraints={iconRef}
+                      initial={{ scale: 0 }}
+                      animate={{ rotate: 360, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                      }}
                       class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
                     >
                       <a
@@ -120,8 +125,13 @@ function Contact() {
                       </a>
                     </motion.li>
                     <motion.li
-                      drag
-                      dragConstraints={iconRef}
+                      initial={{ scale: 0 }}
+                      animate={{ rotate: 360, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                      }}
                       class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
                     >
                       <a
@@ -133,8 +143,13 @@ function Contact() {
                       </a>
                     </motion.li>
                     <motion.li
-                      drag
-                      dragConstraints={iconRef}
+                      initial={{ scale: 0 }}
+                      animate={{ rotate: 360, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                      }}
                       class="py-1 px-2 contactIcon d-flex justify-content-center align-items-center"
                     >
                       <a
